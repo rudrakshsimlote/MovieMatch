@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to MovieMatch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='landing_style.css') }}">
+</head>
+<body>
+    <div class="landing-container">
+        <header>
+            <h1 class="title">Welcome to MovieMatch</h1>
+            <p class="tagline">Your personalized movie recommendation engine!</p>
+        </header>
+
+        <main>
+            <section class="features">
+                <h2>What is MovieMatch?</h2>
+                <p>
+                    MovieMatch is an intelligent movie recommendation engine that helps you discover your next favorite movie based on your preferences. Our algorithm analyzes your favorite genres and ratings to suggest the perfect movies for you.
+                </p>
+                <div class="feature-list">
+                    <div class="feature">
+                        <h3>Personalized Recommendations</h3>
+                        <p>Get movie suggestions tailored to your tastes and preferences.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Easy to Use</h3>
+                        <p>Simply select your favorite genres and get started with just a few clicks.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Stay Updated</h3>
+                        <p>Stay informed with the latest and trending movies that match your interests.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="auth-links">
+                <a href="{{ url_for('register') }}" class="button">Get Started</a>
+                <a href="{{ url_for('login') }}" class="button">Log In</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='landing_script.js') }}"></script>
+</body>
+</html>
